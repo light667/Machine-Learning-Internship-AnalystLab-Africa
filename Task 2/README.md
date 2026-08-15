@@ -1,11 +1,4 @@
-## Week 1: Machine Learning Problem Framing & Data Understanding
-### Project: Customer Churn Prediction — ABC Communications Ltd
-
-**Prepared by:** Junior Machine Learning Engineer, AnalystLab Africa Consulting
-**Dataset:** [Telco Customer Churn (Kaggle / IBM Sample Data Sets)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-
-## Week 2: Data Preprocessing & Feature Engineering
+# Customer Churn Prediction — Week 2: Data Preprocessing & Feature Engineering
 
 **AnalystLab Africa — Machine Learning Internship Programme**
 Client: ABC Communications Ltd · Dataset: [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
