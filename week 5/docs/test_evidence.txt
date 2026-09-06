@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
 cachedir: .pytest_cache
-rootdir: /home/claude/week5/healthconnect_ml_pipeline
+rootdir: /week5/healthconnect_ml_pipeline
 collecting ... collected 23 items
 
 tests/test_feature_engineering.py::test_historical_no_show_rate_uses_only_prior_appointments PASSED [  4%]
