@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/week5/healthconnect_ml_pipeline
+collecting ... collected 23 items
+
+tests/test_feature_engineering.py::test_historical_no_show_rate_uses_only_prior_appointments PASSED [  4%]
+tests/test_feature_engineering.py::test_historical_no_show_rate_is_order_independent_in_input PASSED [  8%]
+tests/test_feature_engineering.py::test_add_reminder_flag_maps_yes_no_to_binary PASSED [ 13%]
+tests/test_pipeline_integration.py::test_ingestion_raises_on_missing_file PASSED [ 17%]
+tests/test_pipeline_integration.py::test_temporal_split_raises_on_out_of_range_date PASSED [ 21%]
+tests/test_pipeline_integration.py::test_full_pipeline_runs_end_to_end_on_real_data PASSED [ 26%]
+tests/test_preprocessing.py::test_filter_to_modelling_scope_removes_cancelled PASSED [ 30%]
+tests/test_preprocessing.py::test_drop_leakage_columns_removes_waiting_time PASSED [ 34%]
+tests/test_preprocessing.py::test_drop_redundant_columns_removes_appointment_day PASSED [ 39%]
+tests/test_preprocessing.py::test_encode_reminder_channel_missingness_fills_not_sent PASSED [ 43%]
+tests/test_preprocessing.py::test_impute_genuine_missing_values_fills_and_flags PASSED [ 47%]
+tests/test_preprocessing.py::test_encode_target_maps_no_show_to_one PASSED [ 52%]
+tests/test_preprocessing.py::test_clean_end_to_end_produces_binary_target_and_no_leakage_column PASSED [ 56%]
+tests/test_validation.py::test_no_show_history_consistency_passes_on_valid_data PASSED [ 60%]
+tests/test_validation.py::test_no_show_history_consistency_catches_violation PASSED [ 65%]
+tests/test_validation.py::test_booking_lead_days_consistency_passes PASSED [ 69%]
+tests/test_validation.py::test_booking_lead_days_consistency_catches_mismatch PASSED [ 73%]
+tests/test_validation.py::test_appointment_day_consistency_catches_wrong_day PASSED [ 78%]
+tests/test_validation.py::test_reminder_channel_missingness_is_logical_passes PASSED [ 82%]
+tests/test_validation.py::test_reminder_channel_missingness_catches_illogical_case PASSED [ 86%]
+tests/test_validation.py::test_waiting_time_leakage_risk_flags_when_present PASSED [ 91%]
+tests/test_validation.py::test_waiting_time_leakage_risk_ok_when_absent PASSED [ 95%]
+tests/test_validation.py::test_run_all_checks_returns_one_report_per_check PASSED [100%]
+
+============================== 23 passed in 1.30s ==============================

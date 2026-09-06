@@ -1,0 +1,50 @@
+{
+  "version": "v20260903_112849",
+  "model_type": "LogisticRegression",
+  "trained_at_utc": "2026-09-03T11:28:49.296713+00:00",
+  "feature_columns": [
+    "age",
+    "booking_lead_days",
+    "previous_appointments",
+    "previous_no_shows",
+    "distance_to_clinic_km",
+    "distance_to_clinic_km_was_missing",
+    "historical_appointment_count",
+    "historical_no_show_rate",
+    "reminder_sent_flag",
+    "gender_Male",
+    "gender_Prefer not to say",
+    "age_group_25-34",
+    "age_group_35-44",
+    "age_group_45-54",
+    "age_group_55-64",
+    "age_group_65+",
+    "appointment_type_Follow-up",
+    "appointment_type_General Consultation",
+    "appointment_type_Specialist Consultation",
+    "appointment_time_Evening",
+    "appointment_time_Morning",
+    "reminder_sent_Yes",
+    "reminder_channel_Not Sent",
+    "reminder_channel_SMS",
+    "reminder_channel_WhatsApp"
+  ],
+  "metrics": {
+    "accuracy": 0.6153,
+    "precision": 0.6331,
+    "recall": 0.598,
+    "f1": 0.615,
+    "roc_auc": 0.6635,
+    "confusion_matrix": [
+      [
+        410,
+        237
+      ],
+      [
+        275,
+        409
+      ]
+    ],
+    "n_test_rows": 1331
+  }
+}
